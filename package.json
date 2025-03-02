@@ -1,0 +1,48 @@
+{
+  "name": "logger",
+  "version": "0.1.0",
+  "description": "A service for collecting, storing and generating error statistics, works in conjunction with the 'logLab' library",
+  "main": "server.js",
+  "scripts": {
+    "gen": "node ./src/swagger/generateSwagger.mjs",
+    "dev-start": "nodemon ./src/server.ts",
+    "build": "tsc --project ./ && webpack --mode production"
+  },
+  "author": "Ilya Nikolaev",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.11",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "kafkajs": "^2.2.4",
+    "loglab": "^0.4.7",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "morgan-body": "^2.6.9",
+    "pm2": "^5.4.2",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/chai": "^4.3.18",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/kafkajs": "^1.9.0",
+    "@types/mocha": "^10.0.1",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.14.11",
+    "@types/swagger-ui-express": "^4.1.6",
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
